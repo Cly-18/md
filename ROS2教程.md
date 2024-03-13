@@ -230,6 +230,3 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 ```
-
-
-
