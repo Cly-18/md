@@ -36,3 +36,27 @@ vncserver -localhost no
 vncserver -kill :*
 ```
 
+## 配置程序自启动
+
+```shell
+```
+
+## 中文输入法
+
+```shell
+# 中文包
+sudo apt-get install language-pack-zh-hans
+# 设置区域
+sudo dpkg-reconfigure locales
+# 中文输入法
+sudo apt-get install ibus ibus-pinyin
+
+
+# 配置环境变量
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+
+
+```
+
