@@ -60,3 +60,21 @@ export XMODIFIERS=@im=ibus
 
 ```
 
+## 临时修改DNS
+
+```shell
+vi /etc/resolv.conf
+nameserver 8.8.8.8
+```
+
+# apt
+
+```shell
+# 证书
+Certificate verification failed: The certificate is NOT trusted. The certificate issuer is unknown.  Could not handshake: Error in the certificate verification. [IP: 23.45.12.48 443]
+
+sudo apt-get install --reinstall ca-certificates
+sudo update-ca-certificates
+```
+
+
